@@ -23,8 +23,8 @@ public class Multiton {
 
     private String toStringMessage;
     public static Multiton getInstance() {
-        num = (num +1) % list.size();
-        return list.get(num);
+        num = (num) % list.size();
+        return list.get(num++);
     }
 
     @Override

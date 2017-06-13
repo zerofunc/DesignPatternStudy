@@ -5,7 +5,7 @@ package SingleTonPattern;
  */
 public class DoubleTonMain {
     public static void main(String[] args) {
-        for (int i = 0; i < 100000; ++i) {
+        for (int i = 0; i < 5; ++i) {
             new Thread(() -> {
                 String message = DoubleTon.getInstance().toString();
                 System.out.println(message);
